@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Interactive Delete Div",
+  "version": "1.1",
+  "description": "Interactively add and remove class names to delete elements on specific websites.",
+  "permissions": ["scripting", "storage", "activeTab"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Manage Classes & URLs</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 10px;
+        width: 250px;
+      }
+      .item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+      }
+      input {
+        width: calc(100% - 60px);
+      }
+      button {
+        margin-left: 5px;
+        padding: 5px;
+        cursor: pointer;
+      }
+      h3 {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Class Manager</h3>
+    <div>
+      <input type="text" id="class-name" placeholder="Enter class name" />
+      <button id="add-class">Add</button>
+    </div>
+    <div id="class-list"></div>
+
+    <h3>URL Manager</h3>
+    <div>
+      <input type="text" id="website-url" placeholder="Enter website URL" />
+      <button id="add-url">Add</button>
+    </div>
+    <div id="url-list"></div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
